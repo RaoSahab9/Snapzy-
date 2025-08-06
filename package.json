@@ -1,0 +1,22 @@
+{
+  "name": "om-ai-app-generator",
+  "version": "1.0.0",
+  "description": "AI-powered application generator that creates complete full-stack applications from text prompts",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "backend:install": "cd backend && npm install",
+    "frontend:install": "cd frontend && npm install",
+    "install:all": "npm install && npm run backend:install && npm run frontend:install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["ai", "code-generation", "full-stack", "react", "nodejs", "express"],
+  "author": "OM AI Generator",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
